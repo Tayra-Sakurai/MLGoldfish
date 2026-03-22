@@ -25,6 +25,7 @@
     <Compile Include="MLGoldfish.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="plot\plot %281%29.png" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +40,7 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="plot\" />
     <Folder Include="result\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

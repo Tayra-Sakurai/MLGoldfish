@@ -9,13 +9,14 @@ model = YOLO("yolov8n-oiv7.pt")
 
 image_path = Path(askdirectory(title="Data Source"))
 
+i: int = 0
+
 for path in image_path.glob("**/*.jpg"):
     cv = cv2.imread(str(path))
     print(f'Image "{path.name}" was loaded.')
     if cv is None:
         continue
     resultL = model(cv, save_dir="result")
-    i: int = 0
     for result in resultL:
         i += 1
         im_bgr: ndarray = result.plot()
