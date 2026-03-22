@@ -1,11 +1,8 @@
-﻿import tensorflow as tf
-from ultralytics import YOLO
+﻿from ultralytics import YOLO
 import cv2
 from pathlib import Path
 
-model = YOLO("yolo26n.pt")
-
-result = model.train(data="lvis.yaml", epochs=100, imgsz=640)
+model = YOLO("yolov8n-oiv7.pt")
 
 image_path = Path("C:\\Users\\taira\\Pictures\\カメラ ロール\\Goldfish")
 
