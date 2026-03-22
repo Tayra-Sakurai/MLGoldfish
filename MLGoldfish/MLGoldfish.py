@@ -4,6 +4,9 @@ import cv2
 from pathlib import Path
 
 model = YOLO("yolo26n.pt")
+
+result = model.train(data="lvis.yaml", epochs=100, imgsz=640)
+
 image_path = Path("C:\\Users\\taira\\Pictures\\カメラ ロール\\Goldfish")
 
 for path in image_path.glob("**/*.jpg"):
