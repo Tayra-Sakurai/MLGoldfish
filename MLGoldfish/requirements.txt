@@ -1,5 +1,5 @@
-﻿tensorflow-cpu
-ultralytics
-numpy
-scipy
-opencv-python
+﻿tensorflow-cpu==2.21.0
+ultralytics==8.4.24
+numpy==2.4.3
+opencv-python==4.13.0.92
+pip==26.0.1
