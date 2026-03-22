@@ -1,0 +1,5 @@
+﻿tensorflow-cpu
+ultralytics
+numpy
+scipy
+opencv-python
