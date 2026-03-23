@@ -4,6 +4,7 @@ from pathlib import Path
 from PIL import Image
 from numpy import ndarray
 from tkinter.filedialog import askdirectory
+import os
 
 model = YOLO("yolov8n-oiv7.pt")
 
@@ -30,3 +31,5 @@ for path in image_path.glob("**/*.jpg"):
         p.mkdir(exist_ok=True)
 
         result.save()
+
+os.system.pause()
