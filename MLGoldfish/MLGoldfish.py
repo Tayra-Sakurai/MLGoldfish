@@ -32,4 +32,4 @@ for path in image_path.glob("**/*.jpg"):
 
         result.save()
 
-os.system.pause()
+os.system("pause")
